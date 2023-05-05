@@ -1,24 +1,445 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyHoroscope" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0eY-tJ-KEl">
+                                <rect key="frame" x="20" y="149" width="353" height="182"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="2LV-vj-RwV">
+                                        <rect key="frame" x="64.666666666666686" y="0.0" width="224" height="182"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Horoscope - Widget App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xy-Cd-xJ3">
+                                                <rect key="frame" x="0.0" y="0.0" width="224" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MoD-sf-Xr6">
+                                                <rect key="frame" x="0.0" y="74" width="224" height="108"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" image="pisces" translatesAutoresizingMaskIntoConstraints="NO" id="IP0-S7-w0o">
+                                                        <rect key="frame" x="0.0" y="0.0" width="108" height="108"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="IP0-S7-w0o" secondAttribute="height" multiplier="1:1" id="Mxa-qD-IDb"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="240" horizontalCompressionResistancePriority="740" verticalCompressionResistancePriority="740" text="My sign" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63V-5X-TNk">
+                                                        <rect key="frame" x="116" y="44" width="108" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="Ugx-Be-PDd"/>
+                                </constraints>
+                            </stackView>
+                            <navigationBar opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjb-V4-TfM">
+                                <rect key="frame" x="-16" y="55" width="393" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem id="Cm6-gf-siw">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle.fill" catalog="system" id="i61-g1-RCr">
+                                            <connections>
+                                                <segue destination="pJN-JG-eCw" kind="presentation" id="Ves-0n-dmF"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wR5-LW-Uok">
+                                <rect key="frame" x="136" y="557" width="90" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="clear UD"/>
+                                <connections>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VQv-DL-uRK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qjb-V4-TfM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3OA-i1-lgl"/>
+                            <constraint firstItem="0eY-tJ-KEl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EAl-Z8-DxQ"/>
+                            <constraint firstItem="qjb-V4-TfM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-32" id="FnX-Nd-zWO"/>
+                            <constraint firstItem="0eY-tJ-KEl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FoN-Sq-AEc"/>
+                            <constraint firstItem="qjb-V4-TfM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-4" id="TNx-Jn-3rl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0eY-tJ-KEl" secondAttribute="trailing" constant="20" id="aUP-V4-GjU"/>
+                            <constraint firstItem="0eY-tJ-KEl" firstAttribute="top" secondItem="qjb-V4-TfM" secondAttribute="bottom" constant="50" id="cPY-11-PD7"/>
+                        </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="JB0-Se-uKQ" kind="presentation" identifier="setup" id="RVI-5u-wFk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="6.8702290076335872" y="-27.464788732394368"/>
+        </scene>
+        <!--Set Up View Controller-->
+        <scene sceneID="a6Q-MK-eUt">
+            <objects>
+                <viewController id="JB0-Se-uKQ" customClass="SetUpViewController" customModule="MyHoroscope" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6cW-Z1-MHx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="olg-fE-htn">
+                                <rect key="frame" x="30" y="70" width="333" height="626.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your sign" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEZ-gT-por">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="26.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Tlq-Iz-Pdx">
+                                        <rect key="frame" x="0.0" y="26.333333333333314" width="333" height="600"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hcJ-U9-0bO">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="150"/>
+                                                <subviews>
+                                                    <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqE-at-1uw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="111" height="150"/>
+                                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="aries" imagePadding="0.0">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="signSelection:" destination="JB0-Se-uKQ" eventType="touchUpInside" id="pAg-Ox-q2R"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcX-yS-oHY">
+                                                        <rect key="frame" x="111" y="0.0" width="111" height="150"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="taurus">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                                            <directionalEdgeInsets key="contentInsets" top="10" leading="10" bottom="10" trailing="10"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="signSelection:" destination="JB0-Se-uKQ" eventType="touchUpInside" id="jvZ-wp-dvh"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijd-Qk-U9i">
+                                                        <rect key="frame" x="222" y="0.0" width="111" height="150"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="gemini">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="signSelection:" destination="JB0-Se-uKQ" eventType="touchUpInside" id="jpE-cq-HLt"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="M2c-Pn-ZhP">
+                                                <rect key="frame" x="0.0" y="150" width="333" height="150"/>
+                                                <subviews>
+                                                    <button opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XD3-W1-lS2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="111" height="150"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="cancer">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                                            <directionalEdgeInsets key="contentInsets" top="10" leading="10" bottom="10" trailing="10"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="signSelection:" destination="JB0-Se-uKQ" eventType="touchUpInside" id="kot-0F-lZ8"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SD6-sL-S1e">
+                                                        <rect key="frame" x="111" y="0.0" width="111" height="150"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="leo">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                                            <directionalEdgeInsets key="contentInsets" top="10" leading="10" bottom="10" trailing="10"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="signSelection:" destination="JB0-Se-uKQ" eventType="touchUpInside" id="9Y7-LE-joS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wX2-gf-kpm">
+                                                        <rect key="frame" x="222" y="0.0" width="111" height="150"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="virgo">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                                            <directionalEdgeInsets key="contentInsets" top="10" leading="10" bottom="10" trailing="10"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="signSelection:" destination="JB0-Se-uKQ" eventType="touchUpInside" id="wm8-wM-8Y7"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Sfd-on-lB4">
+                                                <rect key="frame" x="0.0" y="300" width="333" height="150"/>
+                                                <subviews>
+                                                    <button opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbO-a8-Oh8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="111" height="150"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="libra">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                                            <directionalEdgeInsets key="contentInsets" top="10" leading="10" bottom="10" trailing="10"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="signSelection:" destination="JB0-Se-uKQ" eventType="touchUpInside" id="qct-f8-dbL"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJE-t0-15M">
+                                                        <rect key="frame" x="111" y="0.0" width="111" height="150"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="scorpio">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                                            <directionalEdgeInsets key="contentInsets" top="10" leading="10" bottom="10" trailing="10"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="signSelection:" destination="JB0-Se-uKQ" eventType="touchUpInside" id="yvH-Uj-Yar"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujv-Cb-p2u">
+                                                        <rect key="frame" x="222" y="0.0" width="111" height="150"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="sagittarius">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                                            <directionalEdgeInsets key="contentInsets" top="10" leading="10" bottom="10" trailing="10"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="signSelection:" destination="JB0-Se-uKQ" eventType="touchUpInside" id="JRW-MU-TF0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kbF-FM-xMI">
+                                                <rect key="frame" x="0.0" y="450" width="333" height="150"/>
+                                                <subviews>
+                                                    <button opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQX-Ch-qVy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="111" height="150"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="capricorn">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                                            <directionalEdgeInsets key="contentInsets" top="10" leading="10" bottom="10" trailing="10"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="signSelection:" destination="JB0-Se-uKQ" eventType="touchUpInside" id="6lA-L3-VjT"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsf-0N-CNf">
+                                                        <rect key="frame" x="111" y="0.0" width="111" height="150"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="aquarius">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                                            <directionalEdgeInsets key="contentInsets" top="10" leading="10" bottom="10" trailing="10"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="signSelection:" destination="JB0-Se-uKQ" eventType="touchUpInside" id="ELY-9L-Ual"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFv-xc-FIF">
+                                                        <rect key="frame" x="222" y="0.0" width="111" height="150"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="pisces">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                                            <directionalEdgeInsets key="contentInsets" top="10" leading="10" bottom="10" trailing="10"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="signSelection:" destination="JB0-Se-uKQ" eventType="touchUpInside" id="EXz-jh-1ds"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="600" id="rYu-V1-3IX"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3hc-sw-zjh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3hc-sw-zjh" firstAttribute="trailing" secondItem="olg-fE-htn" secondAttribute="trailing" constant="30" id="3tm-Xc-kNs"/>
+                            <constraint firstItem="olg-fE-htn" firstAttribute="centerX" secondItem="6cW-Z1-MHx" secondAttribute="centerX" id="GjJ-Df-E1f"/>
+                            <constraint firstItem="olg-fE-htn" firstAttribute="centerX" secondItem="6cW-Z1-MHx" secondAttribute="centerX" id="xIu-uH-2DS"/>
+                            <constraint firstItem="olg-fE-htn" firstAttribute="top" secondItem="3hc-sw-zjh" secondAttribute="top" constant="70" id="yH5-9f-pG0"/>
+                            <constraint firstItem="olg-fE-htn" firstAttribute="leading" secondItem="3hc-sw-zjh" secondAttribute="leading" constant="30" id="zB9-Kf-6Lz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKQ-xu-A6H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047" y="475"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="5tX-DY-Ukh">
+            <objects>
+                <viewController id="pJN-JG-eCw" customClass="AboutViewController" customModule="MyHoroscope" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="22x-Ml-2Cm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="k1z-HF-Xws">
+                                <rect key="frame" x="12" y="60" width="369" height="600"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="bj3-GC-TUK">
+                                        <rect key="frame" x="0.0" y="0.0" width="369" height="360"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="About this app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rg6-95-cg8">
+                                                <rect key="frame" x="129" y="0.0" width="111" height="86.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riR-YI-awx">
+                                                <rect key="frame" x="0.0" y="89.666666666666657" width="369" height="270.33333333333337"/>
+                                                <string key="text">Thanks for downloading! The main purpose of this app is to serve as portfolio on my job hunting. Said that, please feel free to enjoy the app and cook some of my favourites Spanish dishes. 
+
+This app is designed using architecture pattern MVC and programmed with Swift and UIKit. Also uses Navigation Controller and customs ViewTables and ViewTableCells</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="HUy-FL-pIh" userLabel="About Me">
+                                        <rect key="frame" x="0.0" y="400" width="369" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About the author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioT-lA-Reo">
+                                                <rect key="frame" x="120.33333333333336" y="0.0" width="128.66666666666663" height="22.333333333333332"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="22.333333333333332" id="yjw-9X-L1j"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="author" translatesAutoresizingMaskIntoConstraints="NO" id="jXe-0t-jqd">
+                                                <rect key="frame" x="11" y="25.333333333333321" width="347" height="93.666666666666686"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9K-gR-QDp">
+                                                <rect key="frame" x="5.3333333333333428" y="122" width="358.33333333333326" height="0.0"/>
+                                                <string key="text">Software Engineer with experience in several languages and technologies. Getting deep into iOS development. Fell free to check out my LinkedIn and other portfolio apps using the below links.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="J1g-Z8-Iax" userLabel="Links">
+                                                <rect key="frame" x="0.0" y="125" width="369" height="75"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhh-f2-yS7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="123" height="75"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="E1M-St-Mh1"/>
+                                                            <constraint firstAttribute="height" constant="75" id="JYE-nU-3Zc"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="LinkedIn-Symbole 1">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="buttonLinkedIn:" destination="Zzp-Ds-vRz" eventType="touchUpInside" id="LLt-uy-n35"/>
+                                                            <action selector="buttonLinkedIn:" destination="pJN-JG-eCw" eventType="touchUpInside" id="w9O-hM-MqY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWp-Ph-nZY">
+                                                        <rect key="frame" x="123" y="0.0" width="123" height="75"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="75" id="u4A-kK-LvT"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="ue6-gb-REe"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="LinkedIn-Symbole 1"/>
+                                                        <connections>
+                                                            <action selector="buttonMyApps:" destination="pJN-JG-eCw" eventType="touchUpInside" id="LdX-p2-2d8"/>
+                                                            <action selector="buttonMyApps:" destination="Zzp-Ds-vRz" eventType="touchUpInside" id="WKQ-t9-X9Z"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbt-VN-YwC">
+                                                        <rect key="frame" x="246" y="0.0" width="123" height="75"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="75" id="cFI-gY-Tgj"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="mEW-Fj-XzS"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="GitHub-logo 1"/>
+                                                        <connections>
+                                                            <action selector="buttonGitHub:" destination="pJN-JG-eCw" eventType="touchUpInside" id="26X-Yw-HRd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="DJf-Qh-kfN"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="8sh-gE-0XD"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DdY-gK-Udl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="k1z-HF-Xws" secondAttribute="bottom" constant="60" id="HGg-PQ-Qrl"/>
+                            <constraint firstItem="k1z-HF-Xws" firstAttribute="top" secondItem="DdY-gK-Udl" secondAttribute="top" constant="60" id="VnL-iw-MHT"/>
+                            <constraint firstAttribute="trailing" secondItem="k1z-HF-Xws" secondAttribute="trailing" constant="12" id="Z1z-pa-zQk"/>
+                            <constraint firstItem="k1z-HF-Xws" firstAttribute="leading" secondItem="22x-Ml-2Cm" secondAttribute="leading" constant="12" id="u9s-zl-dnR"/>
+                            <constraint firstItem="k1z-HF-Xws" firstAttribute="centerX" secondItem="22x-Ml-2Cm" secondAttribute="centerX" id="umI-ky-BYx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zaU-D2-r97" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Zzp-Ds-vRz" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1250" y="-222"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GitHub-logo 1" width="75" height="42"/>
+        <image name="LinkedIn-Symbole 1" width="100" height="56"/>
+        <image name="aquarius" width="108" height="108"/>
+        <image name="aries" width="108" height="108"/>
+        <image name="author" width="347" height="365"/>
+        <image name="cancer" width="108" height="108"/>
+        <image name="capricorn" width="108" height="108"/>
+        <image name="gemini" width="108" height="108"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="leo" width="108" height="108"/>
+        <image name="libra" width="108" height="108"/>
+        <image name="pisces" width="108" height="108"/>
+        <image name="sagittarius" width="108" height="108"/>
+        <image name="scorpio" width="108" height="108"/>
+        <image name="taurus" width="108" height="108"/>
+        <image name="virgo" width="108" height="108"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
