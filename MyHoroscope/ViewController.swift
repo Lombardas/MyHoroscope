@@ -23,7 +23,8 @@ class ViewController: UIViewController, SetUpDelegate {
         //print("ENTRANDO EN onSignReady")
         if let value = sign
         {
-            self.presentSign(sign:sign!)
+            self.presentSign(sign:value)
+            self.GetPrediction(sign: value)
         }
         
         
@@ -48,16 +49,8 @@ class ViewController: UIViewController, SetUpDelegate {
         if let sign = UserDefaults.standard.string(forKey: "sign") {
            // print("SIGNO RECUPERADO FROM USERDEFAULTS: " + sign)
             presentSign(sign: sign)
-            
-            
             //NETWORKING LAYER
-            NetworkingProvider.shared.getPrediction(sign: sign) { (prediction) in
-               
-                self.presentPrediction(prediction: prediction)
-                
-            } failure: { (error) in
-                    
-            }
+            GetPrediction(sign: sign)
             
             
         } else {
@@ -104,8 +97,19 @@ class ViewController: UIViewController, SetUpDelegate {
         
     }
     
-    
-    
+    func GetPrediction(sign: String) {
+        
+        
+        NetworkingProvider.shared.getPrediction(sign: sign) { (prediction) in
+            
+            self.presentPrediction(prediction: prediction)
+            
+        } failure: { (error) in
+            
+        }
+        
+        
+    }
     
     
     

@@ -37,33 +37,13 @@ class NetworkingProvider {
                 
                 
                 let predictionDescription = predictions.payload![sign]?.description
-                print("Prediction recuperada del servidor para Aries: \(String(describing: predictionDescription))")
-                /*
-                switch sign {
-                case "ARIES":
-                    
-                    let predictionDescription = predictions.payload!["Aries"]?.description
-                    print("Prediction recuperada del servidor para Aries: \(predictionDescription)")
-               /* case "TAURUS":
-                case "GEMINI":
-                case "CANCER":
-                case "LEO":
-                case "VIRGO":
-                case "LIBRA":
-                case "SCORPIO":
-                case "SAGITTARIUS":
-                case "CAPRICORN":
-                case "AQUARIUS":
-                case "PISCES":*/
-                default:
-                    break
-                }*/
+                print("Prediction recuperada del servidor para \(sign): \(String(describing: predictionDescription))")
+                                
                 
                 
-                
-                prediction = Prediction(sign: "Pisces", image: UIImage.init(named: "pisces"), prediction: "Predigo que vas a conseguir trabajo de programador")
+                prediction = Prediction(sign: sign, image: UIImage.init(named: sign.lowercased()), prediction: predictionDescription)
                 success(prediction)
-              //
+              
                 
             } else {
                 print(response.error?.responseCode ?? "No Error handled")
