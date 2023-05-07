@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0eY-tJ-KEl">
-                                <rect key="frame" x="20" y="149" width="353" height="182"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0eY-tJ-KEl">
+                                <rect key="frame" x="20" y="149" width="353" height="204.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="2LV-vj-RwV">
                                         <rect key="frame" x="64.666666666666686" y="0.0" width="224" height="182"/>
@@ -47,9 +47,15 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your daily prediction goes here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMH-YT-udx" userLabel="prediction">
+                                        <rect key="frame" x="59.000000000000014" y="184" width="235.33333333333337" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="Ugx-Be-PDd"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="800" id="Ugx-Be-PDd"/>
                                 </constraints>
                             </stackView>
                             <navigationBar opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjb-V4-TfM">
@@ -94,6 +100,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="labelPrediction" destination="qMH-YT-udx" id="dsx-LA-nkA"/>
                         <outlet property="signImage" destination="IP0-S7-w0o" id="sHH-Kg-ia0"/>
                         <outlet property="signLabel" destination="63V-5X-TNk" id="utQ-Q5-EDE"/>
                         <segue destination="JB0-Se-uKQ" kind="presentation" identifier="setup" id="RVI-5u-wFk"/>

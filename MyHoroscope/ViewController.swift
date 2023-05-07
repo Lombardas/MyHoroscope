@@ -15,7 +15,7 @@ class ViewController: UIViewController, SetUpDelegate {
     
     @IBOutlet weak var signLabel: UILabel!
     @IBOutlet weak var signImage: UIImageView!
-    
+    @IBOutlet weak var labelPrediction: UILabel!
     
     
     func onSignReady(sign: String?) {
@@ -87,6 +87,7 @@ class ViewController: UIViewController, SetUpDelegate {
         self.selectedSign = sign
         self.signImage.image = UIImage(named: self.selectedSign.lowercased())
         self.signLabel.text = self.selectedSign
+        self.labelPrediction.text = "loading your daily prediction..."
     }
     
     func presentPrediction(prediction: Prediction){
@@ -94,7 +95,8 @@ class ViewController: UIViewController, SetUpDelegate {
         self.selectedSign = prediction.sign!
         self.signImage.image = UIImage(named: self.selectedSign.lowercased())
         self.signLabel.text = self.selectedSign
-        
+        self.labelPrediction.text = prediction.prediction
+        print("PresentPrediction: \(prediction.prediction)")
     }
     
     func GetPrediction(sign: String) {
