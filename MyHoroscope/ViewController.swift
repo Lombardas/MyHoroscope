@@ -23,9 +23,7 @@ class ViewController: UIViewController, SetUpDelegate {
         //print("ENTRANDO EN onSignReady")
         if let value = sign
         {
-            self.selectedSign = value
-            self.signImage.image = UIImage(named: self.selectedSign.lowercased())
-            self.signLabel.text = self.selectedSign
+            self.presentSign(sign:sign!)
         }
         
         
@@ -49,16 +47,17 @@ class ViewController: UIViewController, SetUpDelegate {
        // print("ACCION DE VIEW DID APPEAR")
         if let sign = UserDefaults.standard.string(forKey: "sign") {
            // print("SIGNO RECUPERADO FROM USERDEFAULTS: " + sign)
-            self.selectedSign = sign
-            self.signImage.image = UIImage(named: self.selectedSign.lowercased())
-            self.signLabel.text = self.selectedSign
+            presentSign(sign: sign)
             
             
             //NETWORKING LAYER
-            NetworkingProvider.shared.getPrediction(id: 1440233)
-            
-            
-            
+            NetworkingProvider.shared.getPrediction(sign: sign) { (prediction) in
+               
+                self.presentPrediction(prediction: prediction)
+                
+            } failure: { (error) in
+                    
+            }
             
             
         } else {
@@ -88,6 +87,27 @@ class ViewController: UIViewController, SetUpDelegate {
             
         }
     }
+    
+    
+    func presentSign(sign: String)
+    {
+        self.selectedSign = sign
+        self.signImage.image = UIImage(named: self.selectedSign.lowercased())
+        self.signLabel.text = self.selectedSign
+    }
+    
+    func presentPrediction(prediction: Prediction){
+        
+        self.selectedSign = prediction.sign!
+        self.signImage.image = UIImage(named: self.selectedSign.lowercased())
+        self.signLabel.text = self.selectedSign
+        
+    }
+    
+    
+    
+    
+    
     
     
 }

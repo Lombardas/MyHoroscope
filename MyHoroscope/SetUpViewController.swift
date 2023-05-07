@@ -37,41 +37,41 @@ class SetUpViewController: UIViewController {
         
         switch tag {
         case 1:
-               sign = "ARIES"
-            UserDefaults.standard.setValue("ARIES", forKey: "sign")
+               sign = "Aries"
+            UserDefaults.standard.setValue("Aries", forKey: "sign")
         case 2:
-            sign = "TAURUS"
-            UserDefaults.standard.setValue("TAURUS", forKey: "sign")
+            sign = "Taurus"
+            UserDefaults.standard.setValue("Taurus", forKey: "sign")
         case 3:
-            sign = "GEMINI"
-            UserDefaults.standard.setValue("GEMINI", forKey: "sign")
+            sign = "Gemini"
+            UserDefaults.standard.setValue("Gemini", forKey: "sign")
         case 4:
-            sign = "CANCER"
-            UserDefaults.standard.setValue("CANCER", forKey: "sign")
+            sign = "Cancer"
+            UserDefaults.standard.setValue("Cancer", forKey: "sign")
         case 5:
-            sign = "LEO"
-            UserDefaults.standard.setValue("LEO", forKey: "sign")
+            sign = "Leo"
+            UserDefaults.standard.setValue("Leo", forKey: "sign")
         case 6:
-            sign = "VIRGO"
-            UserDefaults.standard.setValue("VIRGO", forKey: "sign")
+            sign = "Virgo"
+            UserDefaults.standard.setValue("Virgo", forKey: "sign")
         case 7:
-            sign = "LIBRA"
-            UserDefaults.standard.setValue("LIBRA", forKey: "sign")
+            sign = "Libra"
+            UserDefaults.standard.setValue("Libra", forKey: "sign")
         case 8:
-            sign = "SCORPIO"
-            UserDefaults.standard.setValue("SCORPIO", forKey: "sign")
+            sign = "Scorpio"
+            UserDefaults.standard.setValue("Scorpio", forKey: "sign")
         case 9:
-            sign = "SAGITTARIUS"
-            UserDefaults.standard.setValue("SAGITTARIUS", forKey: "sign")
+            sign = "Sagittarius"
+            UserDefaults.standard.setValue("Sagittarius", forKey: "sign")
         case 10:
-            sign = "CAPRICORN"
-            UserDefaults.standard.setValue("CAPRICORN", forKey: "sign")
+            sign = "Capricorn"
+            UserDefaults.standard.setValue("Capricorn", forKey: "sign")
         case 11:
-            sign = "AQUARIUS"
-            UserDefaults.standard.setValue("AQUARIUS", forKey: "sign")
+            sign = "Aquarius"
+            UserDefaults.standard.setValue("Aquarius", forKey: "sign")
         case 12:
-            sign = "PISCES"
-            UserDefaults.standard.setValue("PISCES", forKey: "sign")
+            sign = "Pisces"
+            UserDefaults.standard.setValue("Pisces", forKey: "sign")
         default:
             break
         }

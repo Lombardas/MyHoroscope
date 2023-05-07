@@ -6,19 +6,23 @@
 //
 
 import Foundation
+import UIKit
+import SwiftUI
 
-struct Prediction : Decodable {
+struct Prediction{
     
-    let id: Int?
-   // let date: Date?
-   // let sign: String?
-   // let prediction: String?
-    let name : String?
-    let email : String?
+    let sign: String?
+    //let date: Date?
+   let image: UIImage?
+   let prediction: String?
+    
 }
 
 
-
+struct Predictions : Decodable {
+    let success: Bool?
+    let payload : [String:String]?
+}
 
 //{
 //   "id":1440233,
