@@ -9,10 +9,14 @@ import UIKit
 
 class SetUpViewController: UIViewController {
 
+    
+    var delegate : SetUpDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        
     }
     
 
@@ -29,48 +33,53 @@ class SetUpViewController: UIViewController {
     @IBAction func signSelection(_ sender: Any) {
         
         guard let tag = (sender as? UIButton)?.tag else { return }
-        
+        var sign: String = ""
         
         switch tag {
         case 1:
-                print("ARIES")
+               sign = "ARIES"
             UserDefaults.standard.setValue("ARIES", forKey: "sign")
         case 2:
-                print("TAURUS")
+            sign = "TAURUS"
             UserDefaults.standard.setValue("TAURUS", forKey: "sign")
         case 3:
-                print("GEMINI")
+            sign = "GEMINI"
             UserDefaults.standard.setValue("GEMINI", forKey: "sign")
         case 4:
-                print("CANCER")
+            sign = "CANCER"
             UserDefaults.standard.setValue("CANCER", forKey: "sign")
         case 5:
-                print("LEO")
+            sign = "LEO"
             UserDefaults.standard.setValue("LEO", forKey: "sign")
         case 6:
-                print("VIRGO")
+            sign = "VIRGO"
             UserDefaults.standard.setValue("VIRGO", forKey: "sign")
         case 7:
-                print("LIBRA")
+            sign = "LIBRA"
             UserDefaults.standard.setValue("LIBRA", forKey: "sign")
         case 8:
-                print("SCORPIO")
+            sign = "SCORPIO"
             UserDefaults.standard.setValue("SCORPIO", forKey: "sign")
         case 9:
-                print("SAGITTARIUS")
+            sign = "SAGITTARIUS"
             UserDefaults.standard.setValue("SAGITTARIUS", forKey: "sign")
         case 10:
-                print("CAPRICORN")
+            sign = "CAPRICORN"
             UserDefaults.standard.setValue("CAPRICORN", forKey: "sign")
         case 11:
-                print("AQUARIUS")
+            sign = "AQUARIUS"
             UserDefaults.standard.setValue("AQUARIUS", forKey: "sign")
         case 12:
-                print("PISCES")
+            sign = "PISCES"
             UserDefaults.standard.setValue("PISCES", forKey: "sign")
         default:
             break
         }
+       // print("ENTRANDO DESPUES SIGN SELECTION: \(sign)")
+        self.delegate?.onSignReady(sign: sign)
+        self.dismiss(animated: true)
+        
+        
         
     }
 }

@@ -94,6 +94,8 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="signImage" destination="IP0-S7-w0o" id="sHH-Kg-ia0"/>
+                        <outlet property="signLabel" destination="63V-5X-TNk" id="utQ-Q5-EDE"/>
                         <segue destination="JB0-Se-uKQ" kind="presentation" identifier="setup" id="RVI-5u-wFk"/>
                     </connections>
                 </viewController>
