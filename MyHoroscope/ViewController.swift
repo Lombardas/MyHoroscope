@@ -53,6 +53,14 @@ class ViewController: UIViewController, SetUpDelegate {
             self.signImage.image = UIImage(named: self.selectedSign.lowercased())
             self.signLabel.text = self.selectedSign
             
+            
+            //NETWORKING LAYER
+            NetworkingProvider.shared.getPrediction(id: 1440233)
+            
+            
+            
+            
+            
         } else {
           //  print("NO USER DEFAULTS")
             
