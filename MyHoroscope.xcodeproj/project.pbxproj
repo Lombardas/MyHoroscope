@@ -17,7 +17,38 @@
 		F45B40682A07C841004EF79B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F45B40672A07C841004EF79B /* Alamofire */; };
 		F45B406A2A07C86B004EF79B /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B40692A07C86B004EF79B /* NetworkingProvider.swift */; };
 		F45B406D2A07C9E3004EF79B /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B406C2A07C9E3004EF79B /* Prediction.swift */; };
+		F4A3AC862A08EDAE00B17241 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A3AC852A08EDAE00B17241 /* WidgetKit.framework */; };
+		F4A3AC882A08EDAE00B17241 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A3AC872A08EDAE00B17241 /* SwiftUI.framework */; };
+		F4A3AC8B2A08EDAE00B17241 /* Horoscope_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3AC8A2A08EDAE00B17241 /* Horoscope_WidgetBundle.swift */; };
+		F4A3AC8D2A08EDAE00B17241 /* Horoscope_WidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3AC8C2A08EDAE00B17241 /* Horoscope_WidgetLiveActivity.swift */; };
+		F4A3AC8F2A08EDAE00B17241 /* Horoscope_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3AC8E2A08EDAE00B17241 /* Horoscope_Widget.swift */; };
+		F4A3AC912A08EDAF00B17241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A3AC902A08EDAF00B17241 /* Assets.xcassets */; };
+		F4A3AC952A08EDAF00B17241 /* Horoscope WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F4A3AC832A08EDAE00B17241 /* Horoscope WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4A3AC932A08EDAF00B17241 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F433F3F82A05289200D73BEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4A3AC822A08EDAE00B17241;
+			remoteInfo = "Horoscope WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4A3AC962A08EDAF00B17241 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F4A3AC952A08EDAF00B17241 /* Horoscope WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F433F4002A05289200D73BEC /* MyHoroscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHoroscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +62,14 @@
 		F433F4172A052A5F00D73BEC /* SetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
 		F45B40692A07C86B004EF79B /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
 		F45B406C2A07C9E3004EF79B /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
+		F4A3AC832A08EDAE00B17241 /* Horoscope WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Horoscope WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4A3AC852A08EDAE00B17241 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		F4A3AC872A08EDAE00B17241 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		F4A3AC8A2A08EDAE00B17241 /* Horoscope_WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope_WidgetBundle.swift; sourceTree = "<group>"; };
+		F4A3AC8C2A08EDAE00B17241 /* Horoscope_WidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope_WidgetLiveActivity.swift; sourceTree = "<group>"; };
+		F4A3AC8E2A08EDAE00B17241 /* Horoscope_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope_Widget.swift; sourceTree = "<group>"; };
+		F4A3AC902A08EDAF00B17241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4A3AC922A08EDAF00B17241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +81,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4A3AC802A08EDAE00B17241 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A3AC882A08EDAE00B17241 /* SwiftUI.framework in Frameworks */,
+				F4A3AC862A08EDAE00B17241 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -49,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				F433F4022A05289200D73BEC /* MyHoroscope */,
+				F4A3AC892A08EDAE00B17241 /* Horoscope Widget */,
+				F4A3AC842A08EDAE00B17241 /* Frameworks */,
 				F433F4012A05289200D73BEC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				F433F4002A05289200D73BEC /* MyHoroscope.app */,
+				F4A3AC832A08EDAE00B17241 /* Horoscope WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +137,27 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		F4A3AC842A08EDAE00B17241 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4A3AC852A08EDAE00B17241 /* WidgetKit.framework */,
+				F4A3AC872A08EDAE00B17241 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4A3AC892A08EDAE00B17241 /* Horoscope Widget */ = {
+			isa = PBXGroup;
+			children = (
+				F4A3AC8A2A08EDAE00B17241 /* Horoscope_WidgetBundle.swift */,
+				F4A3AC8C2A08EDAE00B17241 /* Horoscope_WidgetLiveActivity.swift */,
+				F4A3AC8E2A08EDAE00B17241 /* Horoscope_Widget.swift */,
+				F4A3AC902A08EDAF00B17241 /* Assets.xcassets */,
+				F4A3AC922A08EDAF00B17241 /* Info.plist */,
+			);
+			path = "Horoscope Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,10 +168,12 @@
 				F433F3FC2A05289200D73BEC /* Sources */,
 				F433F3FD2A05289200D73BEC /* Frameworks */,
 				F433F3FE2A05289200D73BEC /* Resources */,
+				F4A3AC962A08EDAF00B17241 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F4A3AC942A08EDAF00B17241 /* PBXTargetDependency */,
 			);
 			name = MyHoroscope;
 			packageProductDependencies = (
@@ -108,6 +182,23 @@
 			productName = MyHoroscope;
 			productReference = F433F4002A05289200D73BEC /* MyHoroscope.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F4A3AC822A08EDAE00B17241 /* Horoscope WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4A3AC992A08EDAF00B17241 /* Build configuration list for PBXNativeTarget "Horoscope WidgetExtension" */;
+			buildPhases = (
+				F4A3AC7F2A08EDAE00B17241 /* Sources */,
+				F4A3AC802A08EDAE00B17241 /* Frameworks */,
+				F4A3AC812A08EDAE00B17241 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Horoscope WidgetExtension";
+			productName = "Horoscope WidgetExtension";
+			productReference = F4A3AC832A08EDAE00B17241 /* Horoscope WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -120,6 +211,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					F433F3FF2A05289200D73BEC = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					F4A3AC822A08EDAE00B17241 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -141,6 +235,7 @@
 			projectRoot = "";
 			targets = (
 				F433F3FF2A05289200D73BEC /* MyHoroscope */,
+				F4A3AC822A08EDAE00B17241 /* Horoscope WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -153,6 +248,14 @@
 				F433F4102A05289400D73BEC /* LaunchScreen.storyboard in Resources */,
 				F433F40D2A05289400D73BEC /* Assets.xcassets in Resources */,
 				F433F40B2A05289200D73BEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4A3AC812A08EDAE00B17241 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A3AC912A08EDAF00B17241 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +275,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4A3AC7F2A08EDAE00B17241 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A3AC8B2A08EDAE00B17241 /* Horoscope_WidgetBundle.swift in Sources */,
+				F4A3AC8D2A08EDAE00B17241 /* Horoscope_WidgetLiveActivity.swift in Sources */,
+				F4A3AC8F2A08EDAE00B17241 /* Horoscope_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4A3AC942A08EDAF00B17241 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4A3AC822A08EDAE00B17241 /* Horoscope WidgetExtension */;
+			targetProxy = F4A3AC932A08EDAF00B17241 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F433F4092A05289200D73BEC /* Main.storyboard */ = {
@@ -311,6 +432,7 @@
 		F433F4152A05289400D73BEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +460,7 @@
 		F433F4162A05289400D73BEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -362,6 +485,60 @@
 			};
 			name = Release;
 		};
+		F4A3AC972A08EDAF00B17241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3432GUG8P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Horoscope Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Horoscope Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tasioalmansa.MyHoroscope.Horoscope-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4A3AC982A08EDAF00B17241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3432GUG8P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Horoscope Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Horoscope Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tasioalmansa.MyHoroscope.Horoscope-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -379,6 +556,15 @@
 			buildConfigurations = (
 				F433F4152A05289400D73BEC /* Debug */,
 				F433F4162A05289400D73BEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4A3AC992A08EDAF00B17241 /* Build configuration list for PBXNativeTarget "Horoscope WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4A3AC972A08EDAF00B17241 /* Debug */,
+				F4A3AC982A08EDAF00B17241 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
