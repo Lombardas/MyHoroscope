@@ -70,6 +70,8 @@
 		F4A3AC8E2A08EDAE00B17241 /* Horoscope_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope_Widget.swift; sourceTree = "<group>"; };
 		F4A3AC902A08EDAF00B17241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4A3AC922A08EDAF00B17241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4DA5ACF2A09074D008BEAFF /* MyHoroscope.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyHoroscope.entitlements; sourceTree = "<group>"; };
+		F4DA5AD02A0907D0008BEAFF /* Horoscope WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Horoscope WidgetExtension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		F433F3F72A05289200D73BEC = {
 			isa = PBXGroup;
 			children = (
+				F4DA5AD02A0907D0008BEAFF /* Horoscope WidgetExtension.entitlements */,
 				F433F4022A05289200D73BEC /* MyHoroscope */,
 				F4A3AC892A08EDAE00B17241 /* Horoscope Widget */,
 				F4A3AC842A08EDAE00B17241 /* Frameworks */,
@@ -115,6 +118,7 @@
 		F433F4022A05289200D73BEC /* MyHoroscope */ = {
 			isa = PBXGroup;
 			children = (
+				F4DA5ACF2A09074D008BEAFF /* MyHoroscope.entitlements */,
 				F433F4032A05289200D73BEC /* AppDelegate.swift */,
 				F433F4052A05289200D73BEC /* SceneDelegate.swift */,
 				F433F4072A05289200D73BEC /* ViewController.swift */,
@@ -435,6 +439,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyHoroscope/MyHoroscope.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S3432GUG8P;
@@ -463,6 +468,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyHoroscope/MyHoroscope.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S3432GUG8P;
@@ -490,6 +496,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Horoscope WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S3432GUG8P;
@@ -517,6 +524,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Horoscope WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S3432GUG8P;

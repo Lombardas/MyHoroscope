@@ -37,7 +37,7 @@ class NetworkingProvider {
                 
                 
                 let predictionDescription = predictions.payload![sign]?.description
-                print("Prediction recuperada del servidor para \(sign): \(String(describing: predictionDescription))")
+               // print("Prediction recuperada del servidor para \(sign): \(String(describing: predictionDescription))")
                                 
                 
                 

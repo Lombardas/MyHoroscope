@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import SwiftUI
 
+
 struct Prediction{
     
     let sign: String?

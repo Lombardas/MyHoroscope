@@ -7,27 +7,43 @@
 
 import WidgetKit
 import SwiftUI
-
-
+import Alamofire
 
 
 struct Provider: TimelineProvider {
-    
+       
     
     func getTimeline(in context: Context, completion: @escaping (Timeline<PredictionEntry>) -> Void) {
        
-        var sign: String = "pisces"
-        var signImage : UIImage = UIImage(named: "pisces")!
+        var sign: String = "pisces" //PLACEHOLDER
+        var signImage : UIImage = UIImage(named: "pisces")! //PLACEHOLDER
         var prediction : String = "Some error ocurred, please re-install app and try again."
         
-      if let mySign = UserDefaults.standard.string(forKey: "sign")
-        {
-          sign = mySign
-          print("Captura de userDefaults: \(sign)")
-      }
-        signImage = UIImage(named: sign.lowercased())!
-          prediction = "Prediction placeholder for testing."
-          
+      if let UD = UserDefaults(suiteName: "group.com.tasioalmansa.horoscope")
+    {
+          if let signus = UD.string(forKey: "sign")
+          {
+             print("Signo recogido en el widget: \(signus)")
+            sign = signus
+            signImage = UIImage(named: sign.lowercased())!
+             prediction = "Prediction placeholder for testing before API connect."
+              
+           //  prediction = GetPrediction(sign: sign)
+             // NetworkingProvider.shared.getPrediction(sign: sign) { (predictionObj) in
+                  
+             //  prediction = predictionObj.prediction!
+             //  print("recovered prediction from API: \(prediction)")
+                  
+           //   } failure: { (error) in
+             //     print("Error getting from API: \(error)")
+            //  }
+              
+          } else {
+              print("No captura el UD")
+          }
+    }
+      
+        
       
         var entries: [PredictionEntry] = []
         
@@ -36,6 +52,8 @@ struct Provider: TimelineProvider {
         
         completion(Timeline(entries: entries, policy: .atEnd))
     }
+
+
     
    
     func placeholder(in context: Context) -> PredictionEntry {
@@ -108,3 +126,5 @@ struct Horoscope_Widget_Previews: PreviewProvider {
         }
     }
 }
+
+
