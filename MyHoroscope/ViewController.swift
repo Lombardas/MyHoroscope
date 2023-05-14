@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WidgetKit
 
 class ViewController: UIViewController, SetUpDelegate {
     
@@ -17,6 +18,7 @@ class ViewController: UIViewController, SetUpDelegate {
     @IBOutlet weak var signImage: UIImageView!
     @IBOutlet weak var labelPrediction: UILabel!
     
+    @IBOutlet weak var signbutton: UIButton!
     
     func onSignReady(sign: String?) {
         
@@ -25,6 +27,7 @@ class ViewController: UIViewController, SetUpDelegate {
         {
             self.presentSign(sign:value)
             self.GetPrediction(sign: value)
+            WidgetCenter.shared.reloadAllTimelines()
         }
         
         
@@ -62,6 +65,8 @@ class ViewController: UIViewController, SetUpDelegate {
             
         }
         
+        WidgetCenter.shared.reloadAllTimelines()
+        
     }
     
     
@@ -70,7 +75,10 @@ class ViewController: UIViewController, SetUpDelegate {
     @IBAction func clear(_ sender: Any) {
         
         UserDefaults.standard.removeObject(forKey: "sign")
+        self.performSegue(withIdentifier: "setup", sender: self)
     }
+    
+    
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

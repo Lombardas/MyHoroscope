@@ -11,13 +11,15 @@ import Alamofire
 
 
 struct Provider: TimelineProvider {
-       
+      
+   
     
     func getTimeline(in context: Context, completion: @escaping (Timeline<PredictionEntry>) -> Void) {
        
         var sign: String = "pisces" //PLACEHOLDER
         var signImage : UIImage = UIImage(named: "pisces")! //PLACEHOLDER
-        var prediction : String = "Some error ocurred, please re-install app and try again."
+        var predictionDesc : String = "Click here to select your sign and start getting predictions."
+        var entries: [PredictionEntry] = []
         
       if let UD = UserDefaults(suiteName: "group.com.tasioalmansa.horoscope")
     {
@@ -26,31 +28,31 @@ struct Provider: TimelineProvider {
              print("Signo recogido en el widget: \(signus)")
             sign = signus
             signImage = UIImage(named: sign.lowercased())!
-             prediction = "Prediction placeholder for testing before API connect."
-              
-           //  prediction = GetPrediction(sign: sign)
-             // NetworkingProvider.shared.getPrediction(sign: sign) { (predictionObj) in
+            // predictionDesc = "Prediction placeholder for testing before API connect."
+           
+              getPrediction(sign: sign) { prediction in
+                  predictionDesc = prediction.prediction!
                   
-             //  prediction = predictionObj.prediction!
-             //  print("recovered prediction from API: \(prediction)")
-                  
-           //   } failure: { (error) in
-             //     print("Error getting from API: \(error)")
-            //  }
+                  entries.append(PredictionEntry(date: Date().addingTimeInterval(10), image: signImage, sign: sign, prediction: predictionDesc))
+                  completion(Timeline(entries: entries, policy: .atEnd))
+                  print("Prediction recogida de API: \(predictionDesc)")
+              } failure: { error in
+                  print("ERROR ON LINE 41")
+              }
+            
               
           } else {
               print("No captura el UD")
+              entries.append(PredictionEntry(date: Date().addingTimeInterval(10), image: signImage, sign: sign, prediction: predictionDesc))
+              completion(Timeline(entries: entries, policy: .atEnd))
           }
-    }
-      
-        
-      
-        var entries: [PredictionEntry] = []
-        
-        entries.append(PredictionEntry(date: Date().addingTimeInterval(10), image: signImage, sign: sign, prediction: prediction))
+      } else {
+          entries.append(PredictionEntry(date: Date().addingTimeInterval(10), image: signImage, sign: sign, prediction: predictionDesc))
+          completion(Timeline(entries: entries, policy: .atEnd))
+      }
         
         
-        completion(Timeline(entries: entries, policy: .atEnd))
+       
     }
 
 
@@ -95,7 +97,8 @@ struct Horoscope_WidgetEntryView : View {
             }
             HStack{
                 Text(entry.prediction)
-                    .font(.title2)
+                    .font(.title3)
+                    .padding([.leading,.trailing,.bottom], 5)
             }
         }
         
@@ -128,3 +131,55 @@ struct Horoscope_Widget_Previews: PreviewProvider {
 }
 
 
+
+
+struct Prediction{
+    
+    let sign: String?
+    //let date: Date?
+   let image: UIImage?
+   let prediction: String?
+    
+}
+
+
+struct Predictions : Decodable {
+    let success: Bool?
+    let payload : [String:String]?
+}
+
+
+func getPrediction(sign: String, success: @escaping(_ prediction: Prediction) -> (), failure: @escaping (_ error: Error?) -> ())
+{
+    
+    
+    /**********CONSTANTES DE CONEXION********************/
+    
+    let headers : HTTPHeaders = ["X-RapidAPI-Key": "74c7cd4a4fmshb095233f4a25564p19540bjsn4f9f4fe46316",
+        "X-RapidAPI-Host": "horoscope34.p.rapidapi.com"]
+    
+    let kBase = "https://horoscope34.p.rapidapi.com/api/horoscope/today"
+    /**********************************************************************/
+    
+    var prediction : Prediction = Prediction(sign: "", image: UIImage(named: "pisces"), prediction: "")
+    
+    let url = "\(kBase)"
+    AF.request(url, method: .get,headers: headers).validate(statusCode: 200...299).responseDecodable  (of: Predictions.self) {
+        response in
+        
+        if let predictions = response.value {
+                           
+            let predictionDescription = predictions.payload![sign]?.description
+            
+            prediction = Prediction(sign: sign, image: UIImage.init(named: sign.lowercased()), prediction: predictionDescription)
+            success(prediction)
+          
+        } else {
+            print(response.error?.responseCode ?? "No Error handled")
+            failure(response.error)
+        }
+    }
+    
+    
+    
+}

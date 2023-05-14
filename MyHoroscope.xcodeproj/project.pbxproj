@@ -17,6 +17,7 @@
 		F45B40682A07C841004EF79B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F45B40672A07C841004EF79B /* Alamofire */; };
 		F45B406A2A07C86B004EF79B /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B40692A07C86B004EF79B /* NetworkingProvider.swift */; };
 		F45B406D2A07C9E3004EF79B /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B406C2A07C9E3004EF79B /* Prediction.swift */; };
+		F482139A2A10E19B00418EFE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F48213992A10E19B00418EFE /* Alamofire */; };
 		F4A3AC862A08EDAE00B17241 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A3AC852A08EDAE00B17241 /* WidgetKit.framework */; };
 		F4A3AC882A08EDAE00B17241 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A3AC872A08EDAE00B17241 /* SwiftUI.framework */; };
 		F4A3AC8B2A08EDAE00B17241 /* Horoscope_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3AC8A2A08EDAE00B17241 /* Horoscope_WidgetBundle.swift */; };
@@ -87,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F482139A2A10E19B00418EFE /* Alamofire in Frameworks */,
 				F4A3AC882A08EDAE00B17241 /* SwiftUI.framework in Frameworks */,
 				F4A3AC862A08EDAE00B17241 /* WidgetKit.framework in Frameworks */,
 			);
@@ -200,6 +202,9 @@
 			dependencies = (
 			);
 			name = "Horoscope WidgetExtension";
+			packageProductDependencies = (
+				F48213992A10E19B00418EFE /* Alamofire */,
+			);
 			productName = "Horoscope WidgetExtension";
 			productReference = F4A3AC832A08EDAE00B17241 /* Horoscope WidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -592,6 +597,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		F45B40672A07C841004EF79B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F45B40662A07C841004EF79B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F48213992A10E19B00418EFE /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F45B40662A07C841004EF79B /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;

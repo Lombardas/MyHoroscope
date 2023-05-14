@@ -20,16 +20,16 @@
                                 <rect key="frame" x="20" y="149" width="353" height="204.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="2LV-vj-RwV">
-                                        <rect key="frame" x="64.666666666666686" y="0.0" width="224" height="182"/>
+                                        <rect key="frame" x="6.6666666666666572" y="0.0" width="340" height="182"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Horoscope - Widget App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xy-Cd-xJ3">
-                                                <rect key="frame" x="0.0" y="0.0" width="224" height="18"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="340" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MoD-sf-Xr6">
-                                                <rect key="frame" x="0.0" y="74" width="224" height="108"/>
+                                                <rect key="frame" x="0.0" y="74" width="340" height="108"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" image="pisces" translatesAutoresizingMaskIntoConstraints="NO" id="IP0-S7-w0o">
                                                         <rect key="frame" x="0.0" y="0.0" width="108" height="108"/>
@@ -43,6 +43,14 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ns1-0M-2G5">
+                                                        <rect key="frame" x="232" y="37" width="108" height="34.333333333333343"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="pencil.circle" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f2V-mo-prh"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -75,15 +83,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wR5-LW-Uok">
-                                <rect key="frame" x="136" y="557" width="90" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="clear UD"/>
-                                <connections>
-                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VQv-DL-uRK"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -103,6 +102,7 @@
                         <outlet property="labelPrediction" destination="qMH-YT-udx" id="dsx-LA-nkA"/>
                         <outlet property="signImage" destination="IP0-S7-w0o" id="sHH-Kg-ia0"/>
                         <outlet property="signLabel" destination="63V-5X-TNk" id="utQ-Q5-EDE"/>
+                        <outlet property="signbutton" destination="ns1-0M-2G5" id="TfP-ll-VvO"/>
                         <segue destination="JB0-Se-uKQ" kind="presentation" identifier="setup" id="RVI-5u-wFk"/>
                     </connections>
                 </viewController>
@@ -442,6 +442,7 @@ This app is designed using architecture pattern MVC and programmed with Swift an
         <image name="info.circle.fill" catalog="system" width="128" height="123"/>
         <image name="leo" width="108" height="108"/>
         <image name="libra" width="108" height="108"/>
+        <image name="pencil.circle" catalog="system" width="128" height="123"/>
         <image name="pisces" width="108" height="108"/>
         <image name="sagittarius" width="108" height="108"/>
         <image name="scorpio" width="108" height="108"/>
