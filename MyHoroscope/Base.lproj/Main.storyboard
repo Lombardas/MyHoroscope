@@ -316,96 +316,24 @@
                                 <rect key="frame" x="12" y="60" width="369" height="600"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="bj3-GC-TUK">
-                                        <rect key="frame" x="0.0" y="0.0" width="369" height="360"/>
+                                        <rect key="frame" x="0.66666666666665719" y="0.0" width="367.66666666666674" height="600"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="About this app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rg6-95-cg8">
-                                                <rect key="frame" x="129" y="0.0" width="111" height="86.666666666666671"/>
+                                                <rect key="frame" x="128.33333333333334" y="0.0" width="111" height="144.66666666666666"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riR-YI-awx">
-                                                <rect key="frame" x="0.0" y="89.666666666666657" width="369" height="270.33333333333337"/>
-                                                <string key="text">Thanks for downloading! The main purpose of this app is to serve as portfolio on my job hunting. Said that, please feel free to enjoy the app and cook some of my favourites Spanish dishes. 
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riR-YI-awx">
+                                                <rect key="frame" x="0.0" y="147.66666666666666" width="367.66666666666669" height="452.33333333333337"/>
+                                                <string key="text">Thanks for downloading! 
 
-This app is designed using architecture pattern MVC and programmed with Swift and UIKit. Also uses Navigation Controller and customs ViewTables and ViewTableCells</string>
+Now you can add to your home a Widget to get your daily prediction.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="HUy-FL-pIh" userLabel="About Me">
-                                        <rect key="frame" x="0.0" y="400" width="369" height="200"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About the author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioT-lA-Reo">
-                                                <rect key="frame" x="120.33333333333336" y="0.0" width="128.66666666666663" height="22.333333333333332"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="22.333333333333332" id="yjw-9X-L1j"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="author" translatesAutoresizingMaskIntoConstraints="NO" id="jXe-0t-jqd">
-                                                <rect key="frame" x="11" y="25.333333333333321" width="347" height="93.666666666666686"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9K-gR-QDp">
-                                                <rect key="frame" x="5.3333333333333428" y="122" width="358.33333333333326" height="0.0"/>
-                                                <string key="text">Software Engineer with experience in several languages and technologies. Getting deep into iOS development. Fell free to check out my LinkedIn and other portfolio apps using the below links.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="J1g-Z8-Iax" userLabel="Links">
-                                                <rect key="frame" x="0.0" y="125" width="369" height="75"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhh-f2-yS7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="123" height="75"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="E1M-St-Mh1"/>
-                                                            <constraint firstAttribute="height" constant="75" id="JYE-nU-3Zc"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="LinkedIn-Symbole 1">
-                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="buttonLinkedIn:" destination="Zzp-Ds-vRz" eventType="touchUpInside" id="LLt-uy-n35"/>
-                                                            <action selector="buttonLinkedIn:" destination="pJN-JG-eCw" eventType="touchUpInside" id="w9O-hM-MqY"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWp-Ph-nZY">
-                                                        <rect key="frame" x="123" y="0.0" width="123" height="75"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="75" id="u4A-kK-LvT"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="ue6-gb-REe"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="LinkedIn-Symbole 1"/>
-                                                        <connections>
-                                                            <action selector="buttonMyApps:" destination="pJN-JG-eCw" eventType="touchUpInside" id="LdX-p2-2d8"/>
-                                                            <action selector="buttonMyApps:" destination="Zzp-Ds-vRz" eventType="touchUpInside" id="WKQ-t9-X9Z"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbt-VN-YwC">
-                                                        <rect key="frame" x="246" y="0.0" width="123" height="75"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="75" id="cFI-gY-Tgj"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="mEW-Fj-XzS"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="GitHub-logo 1"/>
-                                                        <connections>
-                                                            <action selector="buttonGitHub:" destination="pJN-JG-eCw" eventType="touchUpInside" id="26X-Yw-HRd"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="DJf-Qh-kfN"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -425,17 +353,13 @@ This app is designed using architecture pattern MVC and programmed with Swift an
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zaU-D2-r97" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Zzp-Ds-vRz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1250" y="-222"/>
         </scene>
     </scenes>
     <resources>
-        <image name="GitHub-logo 1" width="75" height="42"/>
-        <image name="LinkedIn-Symbole 1" width="100" height="56"/>
         <image name="aquarius" width="108" height="108"/>
         <image name="aries" width="108" height="108"/>
-        <image name="author" width="347" height="365"/>
         <image name="cancer" width="108" height="108"/>
         <image name="capricorn" width="108" height="108"/>
         <image name="gemini" width="108" height="108"/>

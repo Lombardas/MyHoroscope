@@ -90,6 +90,7 @@ struct Horoscope_WidgetEntryView : View {
                 Image(uiImage: entry.image)
                     .resizable()
                     .frame(width: 60,height: 60)
+                    .clipShape(Circle())
                     //.padding()
             
                 Text(entry.sign).font(.title).bold()

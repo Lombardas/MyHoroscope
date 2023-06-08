@@ -41,7 +41,15 @@ class ViewController: UIViewController, SetUpDelegate {
         // Do any additional setup after loading the view.
         //  self.performSegue(withIdentifier: "setup", sender: self)
         //UserDefaults.standard.string(forKey: "sign")
+        if let sign = UserDefaults.standard.string(forKey: "sign") {
+            // print("SIGNO RECUPERADO FROM USERDEFAULTS: " + sign)
+            presentSign(sign: sign)
+            //NETWORKING LAYER
+            GetPrediction(sign: sign)
+        }
         
+        signImage.layer.cornerRadius = 42
+        signImage.clipsToBounds = true
         
     }
     
