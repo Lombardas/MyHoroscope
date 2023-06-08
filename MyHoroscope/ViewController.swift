@@ -1,7 +1,7 @@
 //
 //  ViewController.swift
 //  MyHoroscope
-//
+//  Predictions: Horoscope Widget
 //  Created by Anastasio Del Toro Almansa on 05/05/2023.
 //
 
