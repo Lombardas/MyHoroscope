@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +13,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyHoroscope" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0eY-tJ-KEl">
-                                <rect key="frame" x="20" y="149" width="353" height="204.33333333333337"/>
+                                <rect key="frame" x="20" y="138" width="374" height="204.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="2LV-vj-RwV">
-                                        <rect key="frame" x="6.6666666666666572" y="0.0" width="340" height="182"/>
+                                        <rect key="frame" x="17" y="0.0" width="340" height="182"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Horoscope - Widget App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xy-Cd-xJ3">
                                                 <rect key="frame" x="0.0" y="0.0" width="340" height="18"/>
@@ -28,7 +28,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MoD-sf-Xr6">
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MoD-sf-Xr6">
                                                 <rect key="frame" x="0.0" y="74" width="340" height="108"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" image="pisces" translatesAutoresizingMaskIntoConstraints="NO" id="IP0-S7-w0o">
@@ -37,14 +37,17 @@
                                                             <constraint firstAttribute="width" secondItem="IP0-S7-w0o" secondAttribute="height" multiplier="1:1" id="Mxa-qD-IDb"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="240" horizontalCompressionResistancePriority="740" verticalCompressionResistancePriority="740" text="My sign" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63V-5X-TNk">
-                                                        <rect key="frame" x="116" y="44" width="108" height="20.333333333333329"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="240" horizontalCompressionResistancePriority="740" verticalCompressionResistancePriority="740" text="Capricorn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63V-5X-TNk">
+                                                        <rect key="frame" x="116" y="44" width="108" height="20.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="BNB-zT-XMN"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ns1-0M-2G5">
-                                                        <rect key="frame" x="232" y="37" width="108" height="34.333333333333343"/>
+                                                        <rect key="frame" x="232" y="37" width="108" height="34"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="pencil.circle" catalog="system"/>
                                                         <connections>
@@ -56,7 +59,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your daily prediction goes here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMH-YT-udx" userLabel="prediction">
-                                        <rect key="frame" x="59.000000000000014" y="184" width="235.33333333333337" height="20.333333333333343"/>
+                                        <rect key="frame" x="69.5" y="184" width="235.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -67,7 +70,7 @@
                                 </constraints>
                             </stackView>
                             <navigationBar opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjb-V4-TfM">
-                                <rect key="frame" x="-16" y="55" width="393" height="44"/>
+                                <rect key="frame" x="-12" y="44" width="406" height="44"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -83,6 +86,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Dfk-5x-NU6">
+                                <rect key="frame" x="186" y="416" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -99,11 +106,12 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="Dfk-5x-NU6" id="Tm7-UK-lTj"/>
                         <outlet property="labelPrediction" destination="qMH-YT-udx" id="dsx-LA-nkA"/>
                         <outlet property="signImage" destination="IP0-S7-w0o" id="sHH-Kg-ia0"/>
                         <outlet property="signLabel" destination="63V-5X-TNk" id="utQ-Q5-EDE"/>
                         <outlet property="signbutton" destination="ns1-0M-2G5" id="TfP-ll-VvO"/>
-                        <segue destination="JB0-Se-uKQ" kind="presentation" identifier="setup" id="RVI-5u-wFk"/>
+                        <segue destination="JB0-Se-uKQ" kind="showDetail" identifier="setup" id="RVI-5u-wFk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -115,26 +123,26 @@
             <objects>
                 <viewController id="JB0-Se-uKQ" customClass="SetUpViewController" customModule="MyHoroscope" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6cW-Z1-MHx">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="olg-fE-htn">
-                                <rect key="frame" x="30" y="70" width="333" height="626.33333333333337"/>
+                                <rect key="frame" x="30" y="70" width="354" height="626.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your sign" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEZ-gT-por">
-                                        <rect key="frame" x="0.0" y="0.0" width="333" height="26.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="26.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Tlq-Iz-Pdx">
-                                        <rect key="frame" x="0.0" y="26.333333333333314" width="333" height="600"/>
+                                        <rect key="frame" x="0.0" y="26.5" width="354" height="600"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hcJ-U9-0bO">
-                                                <rect key="frame" x="0.0" y="0.0" width="333" height="150"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="hcJ-U9-0bO">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="150"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqE-at-1uw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="111" height="150"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="116.5" height="150"/>
                                                         <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="aries" imagePadding="0.0">
@@ -145,7 +153,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcX-yS-oHY">
-                                                        <rect key="frame" x="111" y="0.0" width="111" height="150"/>
+                                                        <rect key="frame" x="118.5" y="0.0" width="117" height="150"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="taurus">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
@@ -156,7 +164,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijd-Qk-U9i">
-                                                        <rect key="frame" x="222" y="0.0" width="111" height="150"/>
+                                                        <rect key="frame" x="237.5" y="0.0" width="116.5" height="150"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="gemini">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
@@ -167,11 +175,11 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="M2c-Pn-ZhP">
-                                                <rect key="frame" x="0.0" y="150" width="333" height="150"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="M2c-Pn-ZhP">
+                                                <rect key="frame" x="0.0" y="150" width="354" height="150"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XD3-W1-lS2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="111" height="150"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="116.5" height="150"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="cancer">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
@@ -182,7 +190,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SD6-sL-S1e">
-                                                        <rect key="frame" x="111" y="0.0" width="111" height="150"/>
+                                                        <rect key="frame" x="118.5" y="0.0" width="117" height="150"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="leo">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
@@ -193,7 +201,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wX2-gf-kpm">
-                                                        <rect key="frame" x="222" y="0.0" width="111" height="150"/>
+                                                        <rect key="frame" x="237.5" y="0.0" width="116.5" height="150"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="virgo">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
@@ -205,11 +213,11 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Sfd-on-lB4">
-                                                <rect key="frame" x="0.0" y="300" width="333" height="150"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Sfd-on-lB4">
+                                                <rect key="frame" x="0.0" y="300" width="354" height="150"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbO-a8-Oh8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="111" height="150"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="116.5" height="150"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="libra">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
@@ -220,7 +228,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJE-t0-15M">
-                                                        <rect key="frame" x="111" y="0.0" width="111" height="150"/>
+                                                        <rect key="frame" x="118.5" y="0.0" width="117" height="150"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="scorpio">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
@@ -231,7 +239,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujv-Cb-p2u">
-                                                        <rect key="frame" x="222" y="0.0" width="111" height="150"/>
+                                                        <rect key="frame" x="237.5" y="0.0" width="116.5" height="150"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="sagittarius">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
@@ -243,11 +251,11 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kbF-FM-xMI">
-                                                <rect key="frame" x="0.0" y="450" width="333" height="150"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="kbF-FM-xMI">
+                                                <rect key="frame" x="0.0" y="450" width="354" height="150"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQX-Ch-qVy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="111" height="150"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="116.5" height="150"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="capricorn">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
@@ -258,7 +266,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsf-0N-CNf">
-                                                        <rect key="frame" x="111" y="0.0" width="111" height="150"/>
+                                                        <rect key="frame" x="118.5" y="0.0" width="117" height="150"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="aquarius">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
@@ -269,7 +277,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFv-xc-FIF">
-                                                        <rect key="frame" x="222" y="0.0" width="111" height="150"/>
+                                                        <rect key="frame" x="237.5" y="0.0" width="116.5" height="150"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="pisces">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
@@ -299,6 +307,7 @@
                             <constraint firstItem="olg-fE-htn" firstAttribute="leading" secondItem="3hc-sw-zjh" secondAttribute="leading" constant="30" id="zB9-Kf-6Lz"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="p9z-Tl-a51"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKQ-xu-A6H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -309,23 +318,23 @@
             <objects>
                 <viewController id="pJN-JG-eCw" customClass="AboutViewController" customModule="MyHoroscope" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="22x-Ml-2Cm">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="k1z-HF-Xws">
-                                <rect key="frame" x="12" y="60" width="369" height="600"/>
+                                <rect key="frame" x="12" y="60" width="390" height="600"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="bj3-GC-TUK">
-                                        <rect key="frame" x="0.66666666666665719" y="0.0" width="367.66666666666674" height="600"/>
+                                        <rect key="frame" x="6" y="0.0" width="378" height="600"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="About this app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rg6-95-cg8">
-                                                <rect key="frame" x="128.33333333333334" y="0.0" width="111" height="144.66666666666666"/>
+                                                <rect key="frame" x="133.5" y="0.0" width="111" height="145.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riR-YI-awx">
-                                                <rect key="frame" x="0.0" y="147.66666666666666" width="367.66666666666669" height="452.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="148.5" width="378" height="451.5"/>
                                                 <string key="text">Thanks for downloading! 
 
 Now you can add to your home a Widget to get your daily prediction.</string>

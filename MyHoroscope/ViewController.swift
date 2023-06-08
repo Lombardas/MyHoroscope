@@ -7,13 +7,18 @@
 
 import UIKit
 import WidgetKit
+import GoogleMobileAds
 
-class ViewController: UIViewController, SetUpDelegate {
-    
+class ViewController: UIViewController, SetUpDelegate, GADBannerViewDelegate, GADFullScreenContentDelegate {
+    // *****GOOGLE ADS********
+    var bannerView: GADBannerView!
+    private var interstitial: GADInterstitialAd?
+    //*************************
     
     
     var selectedSign : String = ""
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var signLabel: UILabel!
     @IBOutlet weak var signImage: UIImageView!
     @IBOutlet weak var labelPrediction: UILabel!
@@ -39,6 +44,10 @@ class ViewController: UIViewController, SetUpDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.startAnimating()
+        
         //  self.performSegue(withIdentifier: "setup", sender: self)
         //UserDefaults.standard.string(forKey: "sign")
         if let sign = UserDefaults.standard.string(forKey: "sign") {
@@ -51,12 +60,50 @@ class ViewController: UIViewController, SetUpDelegate {
         signImage.layer.cornerRadius = 42
         signImage.clipsToBounds = true
         
+        
+        // GOOGLE ADS
+        // In this case, we instantiate the banner with desired ad size.
+       // bannerView.delegate = self
+           bannerView = GADBannerView(adSize: GADAdSizeBanner)
+
+           addBannerViewToView(bannerView)
+            bannerView.adUnitID = "ca-app-pub-2455578915080406/6666022993"
+            bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        bannerView.delegate = self
+        
+        
+       loadInterstitial()
+        
+        
+    }
+    
+    
+    func loadInterstitial() {
+        
+        //Interstatial
+        let request = GADRequest()
+            GADInterstitialAd.load(withAdUnitID: "ca-app-pub-2455578915080406/7787532979",
+                                        request: request,
+                              completionHandler: { [self] ad, error in
+                                if let error = error {
+                                  print("Failed to load interstitial ad with error: \(error.localizedDescription)")
+                                  return
+                                }
+                                interstitial = ad
+                                interstitial?.fullScreenContentDelegate = self
+                              }
+            )
+        
+        
+        
     }
     
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
        // print("ACCION DE VIEW DID APPEAR")
+        
         if let sign = UserDefaults.standard.string(forKey: "sign") {
            // print("SIGNO RECUPERADO FROM USERDEFAULTS: " + sign)
             presentSign(sign: sign)
@@ -75,6 +122,7 @@ class ViewController: UIViewController, SetUpDelegate {
         
         WidgetCenter.shared.reloadAllTimelines()
         
+        
     }
     
     
@@ -90,6 +138,13 @@ class ViewController: UIViewController, SetUpDelegate {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if interstitial != nil {
+            interstitial!.present(fromRootViewController: self)
+          } else {
+            print("Ad wasn't ready")
+          }
+        
         if segue.identifier == "setup" {
             let vc2 = segue.destination as! SetUpViewController
             vc2.delegate = self
@@ -113,6 +168,7 @@ class ViewController: UIViewController, SetUpDelegate {
         self.signLabel.text = self.selectedSign
         self.labelPrediction.text = prediction.prediction
         print("PresentPrediction: \(prediction.prediction)")
+        activityIndicator.stopAnimating()
     }
     
     func GetPrediction(sign: String) {
@@ -128,6 +184,31 @@ class ViewController: UIViewController, SetUpDelegate {
         
         
     }
+    
+    
+    // TAG: GOOGLE ADS
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+          [NSLayoutConstraint(item: bannerView,
+                              attribute: .bottom,
+                              relatedBy: .equal,
+                              toItem: view.safeAreaLayoutGuide,
+                              attribute: .bottom,
+                              multiplier: 1,
+                              constant: 0),
+           NSLayoutConstraint(item: bannerView,
+                              attribute: .centerX,
+                              relatedBy: .equal,
+                              toItem: view,
+                              attribute: .centerX,
+                              multiplier: 1,
+                              constant: 0)
+          ])
+       }//END addBannerViewToView
+       
+    
     
     
     

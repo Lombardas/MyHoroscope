@@ -1,0 +1,6 @@
+framework module Pods_Horoscope_WidgetExtension {
+  umbrella header "Pods-Horoscope WidgetExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
