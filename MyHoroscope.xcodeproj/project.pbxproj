@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D4BDE1B666E6571B5A0F938 /* Pods_Horoscope_WidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F1BEF4D89A10EF20A7807A /* Pods_Horoscope_WidgetExtension.framework */; };
-		EB0B9C7C7D405F63A5CF0FA8 /* Pods_MyHoroscope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394FAD9A2CF3830552B47C41 /* Pods_MyHoroscope.framework */; };
+		4AF40FB61BD1182E38C6EE47 /* Pods_Horoscope_WidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21273CF775143CA90F3A2B9D /* Pods_Horoscope_WidgetExtension.framework */; };
+		8C410A5E5D1CB8477DE1C401 /* Pods_MyHoroscope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAD4E079E9B00999C7454EF /* Pods_MyHoroscope.framework */; };
 		F433F4042A05289200D73BEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433F4032A05289200D73BEC /* AppDelegate.swift */; };
 		F433F4062A05289200D73BEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433F4052A05289200D73BEC /* SceneDelegate.swift */; };
 		F433F4082A05289200D73BEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433F4072A05289200D73BEC /* ViewController.swift */; };
@@ -54,10 +54,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		394FAD9A2CF3830552B47C41 /* Pods_MyHoroscope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyHoroscope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C66A90FD6FB39561183C8874 /* Pods-MyHoroscope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHoroscope.release.xcconfig"; path = "Target Support Files/Pods-MyHoroscope/Pods-MyHoroscope.release.xcconfig"; sourceTree = "<group>"; };
-		D2942608C1E7F06E51E07B5E /* Pods-Horoscope WidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Horoscope WidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-Horoscope WidgetExtension/Pods-Horoscope WidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		EC160102AB48042FE88FC826 /* Pods-MyHoroscope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHoroscope.debug.xcconfig"; path = "Target Support Files/Pods-MyHoroscope/Pods-MyHoroscope.debug.xcconfig"; sourceTree = "<group>"; };
+		00930481C7DB01230FEB48AF /* Pods-MyHoroscope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHoroscope.release.xcconfig"; path = "Target Support Files/Pods-MyHoroscope/Pods-MyHoroscope.release.xcconfig"; sourceTree = "<group>"; };
+		21273CF775143CA90F3A2B9D /* Pods_Horoscope_WidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Horoscope_WidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F560B4E938CCD3E9994A32E /* Pods-MyHoroscope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHoroscope.debug.xcconfig"; path = "Target Support Files/Pods-MyHoroscope/Pods-MyHoroscope.debug.xcconfig"; sourceTree = "<group>"; };
+		39860CB25B3E34796FCC0A38 /* Pods-Horoscope WidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Horoscope WidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-Horoscope WidgetExtension/Pods-Horoscope WidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		7EAD4E079E9B00999C7454EF /* Pods_MyHoroscope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyHoroscope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF9C8D0C7273565AC46C3CD8 /* Pods-Horoscope WidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Horoscope WidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-Horoscope WidgetExtension/Pods-Horoscope WidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		F433F4002A05289200D73BEC /* MyHoroscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHoroscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F433F4032A05289200D73BEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F433F4052A05289200D73BEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,8 +81,6 @@
 		F4A3AC922A08EDAF00B17241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4DA5ACF2A09074D008BEAFF /* MyHoroscope.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyHoroscope.entitlements; sourceTree = "<group>"; };
 		F4DA5AD02A0907D0008BEAFF /* Horoscope WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Horoscope WidgetExtension.entitlements"; sourceTree = "<group>"; };
-		F4F1BEF4D89A10EF20A7807A /* Pods_Horoscope_WidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Horoscope_WidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA404FA7DBA9902DE2F0318C /* Pods-Horoscope WidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Horoscope WidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-Horoscope WidgetExtension/Pods-Horoscope WidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F45B40682A07C841004EF79B /* Alamofire in Frameworks */,
-				EB0B9C7C7D405F63A5CF0FA8 /* Pods_MyHoroscope.framework in Frameworks */,
+				8C410A5E5D1CB8477DE1C401 /* Pods_MyHoroscope.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,22 +100,21 @@
 				F482139A2A10E19B00418EFE /* Alamofire in Frameworks */,
 				F4A3AC882A08EDAE00B17241 /* SwiftUI.framework in Frameworks */,
 				F4A3AC862A08EDAE00B17241 /* WidgetKit.framework in Frameworks */,
-				0D4BDE1B666E6571B5A0F938 /* Pods_Horoscope_WidgetExtension.framework in Frameworks */,
+				4AF40FB61BD1182E38C6EE47 /* Pods_Horoscope_WidgetExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B30E0C5750ECF43DA43035EE /* Pods */ = {
+		B8D0A888C3744F33A6D4F515 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D2942608C1E7F06E51E07B5E /* Pods-Horoscope WidgetExtension.debug.xcconfig */,
-				FA404FA7DBA9902DE2F0318C /* Pods-Horoscope WidgetExtension.release.xcconfig */,
-				EC160102AB48042FE88FC826 /* Pods-MyHoroscope.debug.xcconfig */,
-				C66A90FD6FB39561183C8874 /* Pods-MyHoroscope.release.xcconfig */,
+				AF9C8D0C7273565AC46C3CD8 /* Pods-Horoscope WidgetExtension.debug.xcconfig */,
+				39860CB25B3E34796FCC0A38 /* Pods-Horoscope WidgetExtension.release.xcconfig */,
+				2F560B4E938CCD3E9994A32E /* Pods-MyHoroscope.debug.xcconfig */,
+				00930481C7DB01230FEB48AF /* Pods-MyHoroscope.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -127,7 +126,7 @@
 				F4A3AC892A08EDAE00B17241 /* Horoscope Widget */,
 				F4A3AC842A08EDAE00B17241 /* Frameworks */,
 				F433F4012A05289200D73BEC /* Products */,
-				B30E0C5750ECF43DA43035EE /* Pods */,
+				B8D0A888C3744F33A6D4F515 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,8 +170,8 @@
 			children = (
 				F4A3AC852A08EDAE00B17241 /* WidgetKit.framework */,
 				F4A3AC872A08EDAE00B17241 /* SwiftUI.framework */,
-				F4F1BEF4D89A10EF20A7807A /* Pods_Horoscope_WidgetExtension.framework */,
-				394FAD9A2CF3830552B47C41 /* Pods_MyHoroscope.framework */,
+				21273CF775143CA90F3A2B9D /* Pods_Horoscope_WidgetExtension.framework */,
+				7EAD4E079E9B00999C7454EF /* Pods_MyHoroscope.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,12 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F433F4142A05289400D73BEC /* Build configuration list for PBXNativeTarget "MyHoroscope" */;
 			buildPhases = (
-				0B0938E33AC37DF23B6FBB1F /* [CP] Check Pods Manifest.lock */,
+				E31FC31D07A813232FE6256C /* [CP] Check Pods Manifest.lock */,
 				F433F3FC2A05289200D73BEC /* Sources */,
 				F433F3FD2A05289200D73BEC /* Frameworks */,
 				F433F3FE2A05289200D73BEC /* Resources */,
 				F4A3AC962A08EDAF00B17241 /* Embed Foundation Extensions */,
-				7285426C7EF90439F134947F /* [CP] Embed Pods Frameworks */,
+				F9532E73372C8DD03D5F6C74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,7 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4A3AC992A08EDAF00B17241 /* Build configuration list for PBXNativeTarget "Horoscope WidgetExtension" */;
 			buildPhases = (
-				122B5322DD4B6A2BD67A50EA /* [CP] Check Pods Manifest.lock */,
+				27DD60F4AB60C06E4E3E588D /* [CP] Check Pods Manifest.lock */,
 				F4A3AC7F2A08EDAE00B17241 /* Sources */,
 				F4A3AC802A08EDAE00B17241 /* Frameworks */,
 				F4A3AC812A08EDAE00B17241 /* Resources */,
@@ -265,7 +264,7 @@
 			);
 			mainGroup = F433F3F72A05289200D73BEC;
 			packageReferences = (
-				F45B40662A07C841004EF79B /* XCRemoteSwiftPackageReference "Alamofire.git" */,
+				F45B40662A07C841004EF79B /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = F433F4012A05289200D73BEC /* Products */;
 			projectDirPath = "";
@@ -299,29 +298,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B0938E33AC37DF23B6FBB1F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MyHoroscope-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		122B5322DD4B6A2BD67A50EA /* [CP] Check Pods Manifest.lock */ = {
+		27DD60F4AB60C06E4E3E588D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -343,7 +320,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7285426C7EF90439F134947F /* [CP] Embed Pods Frameworks */ = {
+		E31FC31D07A813232FE6256C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyHoroscope-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9532E73372C8DD03D5F6C74 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -532,7 +531,7 @@
 		};
 		F433F4152A05289400D73BEC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC160102AB48042FE88FC826 /* Pods-MyHoroscope.debug.xcconfig */;
+			baseConfigurationReference = 2F560B4E938CCD3E9994A32E /* Pods-MyHoroscope.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -543,10 +542,12 @@
 				DEVELOPMENT_TEAM = S3432GUG8P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyHoroscope/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Predictions: Horoscope";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,7 +563,7 @@
 		};
 		F433F4162A05289400D73BEC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C66A90FD6FB39561183C8874 /* Pods-MyHoroscope.release.xcconfig */;
+			baseConfigurationReference = 00930481C7DB01230FEB48AF /* Pods-MyHoroscope.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -573,10 +574,12 @@
 				DEVELOPMENT_TEAM = S3432GUG8P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyHoroscope/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Predictions: Horoscope";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -592,7 +595,7 @@
 		};
 		F4A3AC972A08EDAF00B17241 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2942608C1E7F06E51E07B5E /* Pods-Horoscope WidgetExtension.debug.xcconfig */;
+			baseConfigurationReference = AF9C8D0C7273565AC46C3CD8 /* Pods-Horoscope WidgetExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
@@ -621,7 +624,7 @@
 		};
 		F4A3AC982A08EDAF00B17241 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA404FA7DBA9902DE2F0318C /* Pods-Horoscope WidgetExtension.release.xcconfig */;
+			baseConfigurationReference = 39860CB25B3E34796FCC0A38 /* Pods-Horoscope WidgetExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
@@ -681,7 +684,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F45B40662A07C841004EF79B /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
+		F45B40662A07C841004EF79B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -694,12 +697,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		F45B40672A07C841004EF79B /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F45B40662A07C841004EF79B /* XCRemoteSwiftPackageReference "Alamofire.git" */;
+			package = F45B40662A07C841004EF79B /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 		F48213992A10E19B00418EFE /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F45B40662A07C841004EF79B /* XCRemoteSwiftPackageReference "Alamofire.git" */;
+			package = F45B40662A07C841004EF79B /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
