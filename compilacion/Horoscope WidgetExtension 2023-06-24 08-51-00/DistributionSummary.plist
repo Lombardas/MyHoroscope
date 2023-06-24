@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MyHoroscope.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>CC3115C0565CFD745F2E5F90E84E99383C535D9E</string>
+				<key>dateExpires</key>
+				<string>30/05/2024</string>
+				<key>type</key>
+				<string>Cloud Managed Apple Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>1</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>CC3115C0565CFD745F2E5F90E84E99383C535D9E</string>
+						<key>dateExpires</key>
+						<string>30/05/2024</string>
+						<key>type</key>
+						<string>Cloud Managed Apple Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>FBLPromises.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>S3432GUG8P</string>
+						<key>name</key>
+						<string>Anastasio Del Toro Almansa</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>2.2.0</string>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>1</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>CC3115C0565CFD745F2E5F90E84E99383C535D9E</string>
+						<key>dateExpires</key>
+						<string>30/05/2024</string>
+						<key>type</key>
+						<string>Cloud Managed Apple Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>GoogleUtilities.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>S3432GUG8P</string>
+						<key>name</key>
+						<string>Anastasio Del Toro Almansa</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>7.11.1</string>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>1</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>CC3115C0565CFD745F2E5F90E84E99383C535D9E</string>
+						<key>dateExpires</key>
+						<string>30/05/2024</string>
+						<key>type</key>
+						<string>Cloud Managed Apple Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>nanopb.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>S3432GUG8P</string>
+						<key>name</key>
+						<string>Anastasio Del Toro Almansa</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>2.30909.0</string>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>1</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>CC3115C0565CFD745F2E5F90E84E99383C535D9E</string>
+						<key>dateExpires</key>
+						<string>30/05/2024</string>
+						<key>type</key>
+						<string>Cloud Managed Apple Distribution</string>
+					</dict>
+					<key>entitlements</key>
+					<dict>
+						<key>application-identifier</key>
+						<string>S3432GUG8P.com.tasioalmansa.MyHoroscope.Horoscope-Widget</string>
+						<key>com.apple.developer.team-identifier</key>
+						<string>S3432GUG8P</string>
+						<key>com.apple.security.application-groups</key>
+						<array>
+							<string>group.com.tasioalmansa.horoscope</string>
+						</array>
+						<key>get-task-allow</key>
+						<false/>
+					</dict>
+					<key>name</key>
+					<string>Horoscope WidgetExtension.appex</string>
+					<key>profile</key>
+					<dict>
+						<key>UUID</key>
+						<string>74b7207f-00c2-429d-a26c-ed7bb824dd21</string>
+						<key>dateExpires</key>
+						<string>30/05/2024</string>
+						<key>name</key>
+						<string>iOS Team Ad Hoc Provisioning Profile: com.tasioalmansa.MyHoroscope.Horoscope-Widget</string>
+					</dict>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>S3432GUG8P</string>
+						<key>name</key>
+						<string>Anastasio Del Toro Almansa</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>1.0</string>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>S3432GUG8P.com.tasioalmansa.MyHoroscope</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>S3432GUG8P</string>
+				<key>com.apple.security.application-groups</key>
+				<array>
+					<string>group.com.tasioalmansa.horoscope</string>
+				</array>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>MyHoroscope.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>296421be-7d34-4881-955d-6a302bfe6cbd</string>
+				<key>dateExpires</key>
+				<string>30/05/2024</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: com.tasioalmansa.MyHoroscope</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>S3432GUG8P</string>
+				<key>name</key>
+				<string>Anastasio Del Toro Almansa</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>
