@@ -33,6 +33,8 @@ struct Provider: TimelineProvider {
               getPrediction(sign: sign) { prediction in
                   predictionDesc = prediction.prediction!
                   
+                  entries.append(PredictionEntry(date: Date(), image: signImage, sign: sign, prediction: predictionDesc))
+                  
                   entries.append(PredictionEntry(date: Date().addingTimeInterval(86400), image: signImage, sign: sign, prediction: predictionDesc))
                   completion(Timeline(entries: entries, policy: .atEnd))
                   print("Prediction recogida de API: \(predictionDesc)")
